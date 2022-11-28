@@ -18,7 +18,7 @@ function createProjectList(name, id) {
   return li;
 }
 
-function displayAllProjects() {
+/*function displayAllProjects() {
   clearProjectList();
   localStorage.projects.forEach((project) => {
     displayProjects(project);
@@ -27,12 +27,14 @@ function displayAllProjects() {
     domElement.addProjectForm.reset();
   });
 }
+*/
 
-function clearProjectList() {
+/*function clearProjectList() {
   while (domElement.projectList.firstChild) {
     domElement.projectList.removeChild(domElement.projectList.firstChild);
   }
 }
+*/
 
 function projectTask(project) {
   domElement.taskProject.insertBefore(createSelectionProject(project.name, project.id), domElement.taskProject.lastElementChild);
@@ -126,7 +128,7 @@ function removeTaskFromLS() {
 
 
 
-export default displayAllProjects;
+//export default displayAllProjects;
 
 
 

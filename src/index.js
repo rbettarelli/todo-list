@@ -8,6 +8,6 @@ import * as controller from './controller'
 listeners
 
 
-displayAllProjects()
-showTask()
+//displayAllProjects()
+//showTask()
 

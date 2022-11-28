@@ -1,0 +1,126 @@
+$priColor: #9dc9ac;
+$secColor: #fffec7;
+$triColor: #f56218;
+$fourColor: #ff9d2e;
+$fifthColor: #919167;
+
+.header {
+  background-color: $priColor;
+  max-height: 150px;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.left-menu {
+  
+
+  max-width: 200px;
+
+  li {
+    list-style: none;
+    margin-top: 0.6rem;
+    width: 120px;
+    padding: 0;
+  }
+
+  svg {
+    margin-right: 7px;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+  #projects {
+    border-bottom: thin solid #222;
+  }
+  #new-project{
+    width: 150px;
+    font-size: 15px;
+    overflow: auto;
+ 
+    
+  }
+  .btn {
+    
+    font-size: 0.9rem;
+  
+  }
+
+}
+
+.todo {
+
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border: solid 3px $fourColor;
+  border-radius: 15px;
+
+  .todo-check-box{
+    margin-left: 1.5rem;
+    margin-right: 1.25rem;
+
+  }
+
+  .todo-task-title {
+    margin-right: 3rem;
+    margin-right: auto;
+   font-weight: 300;
+
+  }
+
+  .todo-task-detail {
+
+    position: relative;
+
+    margin-right: 2.5rem;
+    padding: .5rem 1rem;
+    border: 1px solid $triColor;
+    font-size: 1rem;
+    color: $triColor;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all .3s
+  
+    
+  
+  }
+
+  .todo-task-detail:hover {
+    position: relative;
+    background-color: $triColor;
+    color: white;
+  }
+
+
+  .todo-task-due-date { 
+    margin-right: 2rem;
+    width: 4.5rem;
+    font-size: 1rem;
+    color: $priColor;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    fill: $triColor
+  }
+  .task-edit-btn {
+    margin-right: 2rem;
+
+  }
+
+  .task-delete-btn{
+
+  }
+
+
+ 
+}

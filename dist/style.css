@@ -1,0 +1,85 @@
+.header {
+  background-color: #9dc9ac;
+  max-height: 150px;
+}
+.header button {
+  background-color: transparent;
+  border: none;
+}
+
+.left-menu {
+  max-width: 200px;
+}
+.left-menu li {
+  list-style: none;
+  margin-top: 0.6rem;
+  width: 120px;
+  padding: 0;
+}
+.left-menu svg {
+  margin-right: 7px;
+}
+.left-menu li:hover {
+  cursor: pointer;
+}
+.left-menu #projects {
+  border-bottom: thin solid #222;
+}
+.left-menu #new-project {
+  width: 150px;
+  font-size: 15px;
+  overflow: auto;
+}
+.left-menu .btn {
+  font-size: 0.9rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border: solid 3px #ff9d2e;
+  border-radius: 15px;
+}
+.todo .todo-check-box {
+  margin-left: 1.5rem;
+  margin-right: 1.25rem;
+}
+.todo .todo-task-title {
+  margin-right: 3rem;
+  margin-right: auto;
+  font-weight: 300;
+}
+.todo .todo-task-detail {
+  position: relative;
+  margin-right: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f56218;
+  font-size: 1rem;
+  color: #f56218;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.todo .todo-task-detail:hover {
+  position: relative;
+  background-color: #f56218;
+  color: white;
+}
+.todo .todo-task-due-date {
+  margin-right: 2rem;
+  width: 4.5rem;
+  font-size: 1rem;
+  color: #9dc9ac;
+}
+.todo .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  fill: #f56218;
+}
+.todo .task-edit-btn {
+  margin-right: 2rem;
+}/*# sourceMappingURL=style.css.map */

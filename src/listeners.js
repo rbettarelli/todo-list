@@ -1,4 +1,4 @@
-import * as controller from "./controller";
+import { displayAllProjects, removeTaskFromLS } from "./controller";
 import * as domElement from "./domElements";
 import addProject from "./projects";
 import addTask from "./tasks";
@@ -9,7 +9,7 @@ const listeners = (() => {
   domElement.addProjectForm.addEventListener("submit", (e) => {
     console.log('salvo')
     addProject(domElement.projectName.value);
-    controller.displayAllProjects()
+    displayAllProjects()
     domElement.projectName.value=''
     e.preventDefault();
   });
@@ -29,14 +29,14 @@ const listeners = (() => {
 
   document.addEventListener("click", (e) => {
 
-
-    console.log(e.target.id)
-
+  
     if (e.target.closest(`span[id*="delete"]`)) {
       const id = e.target.closest('span').id
-      controller.removeTaskFromLS(id.substr(id.indexOf('-')))
+      removeTaskFromLS(id.substr(id.indexOf('-')))
       console.log(id.substr(id.indexOf('-')))  
-      controller.removeTaskFromLS()
+
+      
+      
     }
     
   });

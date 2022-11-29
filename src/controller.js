@@ -1,8 +1,7 @@
-import Project from "./projects";
 import * as localStorage from "./localStorage";
 import * as domElement from "./domElements";
 import { format } from "date-fns";
-import { indexOf } from "lodash";
+
 
 const tasksLs = localStorage.tasks
 
@@ -109,25 +108,29 @@ export const showTask = () => {
     domElement.taskContainer.appendChild(taskDiv);
   });
 
-function removeTaskFromLS() {
-    console.log(taskID);
-    for (let index = 0; index < localStorage.tasks.length; index++) {
-      if (localStorage.tasks[index].id === taskID) {
-        localStorage.tasks.splice(index, 1);
-        break;
 
-      }
-    }
-  }
-
-
+ 
 };
 
+function removeTaskFromLS () {
+  console.log(taskID);
+  for (let index = 0; index < localStorage.tasks.length; index++) {
+    if (localStorage.tasks[index].id === taskID) {
+      localStorage.tasks.splice(index, 1);
+      break;
 
+    }
+  }
+}
 
 
 
 export {displayAllProjects, removeTaskFromLS}
+
+
+
+
+
 
 
 

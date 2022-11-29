@@ -8,7 +8,9 @@
 }
 
 .left-menu {
-  max-width: 200px;
+  width: 300px;
+  height: calc(100vh - 44px);
+  position: absolute;
 }
 .left-menu li {
   list-style: none;
@@ -32,6 +34,10 @@
 }
 .left-menu .btn {
   font-size: 0.9rem;
+}
+
+.editor {
+  max-width: 100%;
 }
 
 .todo {

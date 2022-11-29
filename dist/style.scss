@@ -15,9 +15,11 @@ $fifthColor: #919167;
 }
 
 .left-menu {
-  
 
-  max-width: 200px;
+  width: 300px;
+  height: calc(100vh - 44px);
+  position: absolute;
+  
 
   li {
     list-style: none;
@@ -48,6 +50,13 @@ $fifthColor: #919167;
     font-size: 0.9rem;
   
   }
+
+}
+
+
+.editor {
+  max-width: 100%;
+
 
 }
 

@@ -12,29 +12,29 @@ function displayProjects(project) {
 
 function createProjectList(name, id) {
   const li = document.createElement("li");
-  li.id = "project" + id;
+  li.id = "project-" + id;
   li.textContent = name;
   li.classList.add("list-of-project");
   return li;
 }
 
-/*function displayAllProjects() {
+function displayAllProjects() {
   clearProjectList();
   localStorage.projects.forEach((project) => {
     displayProjects(project);
-    projectTask(project);
+    projectTask(project)
     console.log(project);
     domElement.addProjectForm.reset();
   });
 }
-*/
 
-/*function clearProjectList() {
+
+function clearProjectList() {
   while (domElement.projectList.firstChild) {
     domElement.projectList.removeChild(domElement.projectList.firstChild);
   }
 }
-*/
+
 
 function projectTask(project) {
   domElement.taskProject.insertBefore(createSelectionProject(project.name, project.id), domElement.taskProject.lastElementChild);
@@ -42,7 +42,7 @@ function projectTask(project) {
 
 function createSelectionProject(name, id) {
   const option = document.createElement("option");
-  option.id = "project" + id;
+  option.id = "project-" + id;
   option.textContent = name;
   option.value = name;
   return option;
@@ -127,8 +127,7 @@ function removeTaskFromLS() {
 
 
 
-
-//export default displayAllProjects;
+export {displayAllProjects, removeTaskFromLS}
 
 
 
